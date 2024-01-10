@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto@1&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    line-height: 1.6em;
+    background: rgb(224, 223, 232);
+    color: #0f141e;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: rgb(244, 233, 233);
+    padding: 20px 10px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.avatar {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, .25);
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+        /* отменяем display: flex; */
+    }
+}
+
+div h4 {
+    margin-bottom: 0;
+}
+
+.list {
+    margin-left: 40px; 
+}
+
+.list li {
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.card {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-red {
+    background: #ffe5e5;
+    padding-bottom: 20px;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-blue {
+    background: rgb(166, 166, 234);
+}
+
+/*при наведении курсора меняется цвет на оранжевый*/
+a:hover {
+    color: orange; 
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+a {
+    /* color: #4036f1; */
+    text-decoration: none; /*исчезает подчёркивание*/
+    transition: all .8s; /*плавная анимация*/
+    color: #0f141e;
+} 
+
+/* a:visited {
+    color: rgb(233, 22, 170);
+} */
+
+a:active {
+    color: rgb(20, 17, 20);
+}
+
+.btn:hover {
+    background: rgb(58, 187, 112);
+    opacity: .8;
+}
+
+.btn {
+    background: rgb(9, 6, 22);
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 10px 5px 25px red;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+}
+
+.table {
+    width: 100%; 
+}
+
+.table td {
+    padding-bottom: 10ox;
+    
+}
+
+.table td:nth-child(2) {
+    background: blue;
+}
+
+.table td:nth-child(3) {
+    background: rgb(13, 209, 62);
+} 
+
+.table tr:nth-child(odd) {
+    background: rgb(231, 14, 14);
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #0f141e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;/*шрифты наследуются от тех, которые заданы выше*/
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    /* width: 47%; */
+    width: 50%;
+    /* width: calc(50% - 20px);  */
+    /* ширина с учётом занятых процентов ширины */
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
